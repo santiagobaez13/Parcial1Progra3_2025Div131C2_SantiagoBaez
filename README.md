@@ -88,4 +88,4 @@ Implementar una función de filtro, que se dispare al escribir en un campo input
 ### Ejercicio 10_____________   1.5 puntos
 - Estila la pagina acorde a la imagen (sample.png)
 
-![sample.png](sample.png)
+![sample.jpeg](sample.jpeg)
