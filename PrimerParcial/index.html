@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Frutas</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html">
+            <div class="logo">Tienda de Frutas</div>
+        </a>
+
+        <!-- Buscador -->
+        <input type="text" id="filtro" class="barra-busqueda" placeholder="Buscar fruta...">
+
+        <!-- Carrito -->
+        <div class="carrito">
+            <h2 id="contador-carrito">Carrito: 0 productos</h2>
+            <div class="carrito-contenido">
+                <ul id="lista-carrito"></ul>
+                <p id="total-carrito">Total: $0</p>
+                <button id="btn-vaciar">Vaciar carrito</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección productos -->
+        <section class="texto-principal">
+            <h2 id="seccion-principal">Nuestros productos</h2>
+        </section>
+
+        <!-- Botones para ordenar -->
+        <section class="botonera">
+            <button id="btn-ordenar-nombre" class="boton-ordenar">Ordenar por Nombre</button>
+            <button id="btn-ordenar-precio" class="boton-ordenar">Ordenar por Precio</button>
+        </section>
+
+        <!-- Contenedor de productos -->
+        <section id="contenedor-productos" class="grid-productos">
+            <!-- Aquí el JS inyecta las frutas -->
+        </section>
+    </main>
+</body>
+
+</html>
