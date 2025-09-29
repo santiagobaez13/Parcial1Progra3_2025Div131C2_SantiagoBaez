@@ -1,210 +1,211 @@
 body {
-    background-color: rgb(255, 255, 255);
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0%;
+    background-color: rgb(255, 255, 255);   /* Definir el color de fondo */
+    font-size: medium;   /* Definir el tamaño de fuente */
+    font-family: Arial, Helvetica, sans-serif;   /* Definir la fuente */
+    margin: 0%;   /* Definir el margen */
 }
-
+/* Estilo para el header */
 a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.6rem;
+    text-decoration: none;   /* Eliminar el underline del link */
+    color: white;   /* Colorear el texto del link */
+    font-size: 1.6rem;   /* Definir el tamaño del texto del link */
 }
+/* Estilo para el contenedor principal */
 
 .contenedor-principal {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr;
-    gap: 1rem;
+    display: grid;   /* Crear un grid para el contenedor principal */
+    grid-template-columns: 1fr 1fr;   /* Definir las columnas del grid */
+    grid-template-rows: auto 1fr;   /* Definir las filas del grid */
+    gap: 1rem;   /* Definir el espacio entre las filas y columnas */
 }
 
-header {
-    background-color: rgb(25, 197, 34);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
+header { 
+    background-color: rgb(25, 197, 34);   /* Definir el color de fondo del header(es el de la pagina de jumbo, se lo robe exacto) */
+    display: flex;   /* Crear un flex para el header */
+    align-items: center;   /* Alinear los elementos del header en el centro */
+    justify-content: space-between;   /* Distribuir los elementos del header entre si */
+    padding: 1rem;   /* Definir el padding del header */
 }
 
 
-section {
-    padding: 1rem;
+section {   
+    padding: 1rem;   /* Definir el padding del section */
 }
 
 .barra-busqueda {
-    padding: 0.5rem;
-    border: black solid 1px;
-    border-radius: 0.5rem;
-    background-color: rgb(230, 237, 229);
-    font-size: 1rem;
-    width: 200px;
+    padding: 0.5rem;   /* Definir el padding del input de busqueda */
+    border: black solid 1px;   /* Definir el borde del input de busqueda */
+    border-radius: 0.5rem;   /* Definir el radio del input de busqueda */
+    background-color: rgb(230, 237, 229);   /* Definir el color de fondo del input de busqueda */
+    font-size: 1rem;   /* Definir el tamaño de fuente del input de busqueda */
+    width: 200px;   /* Definir el ancho del input de busqueda */
 }
 
 #seccion-principal {
-    margin: 0;
-    font-size: 3rem;
-    font-weight: bold;
-    color: rgb(25, 197, 34);
-    text-align: center;
-    justify-content: center;
+    margin: 0;   /* Eliminar el margen del section */
+    font-size: 3rem;   /* Definir el tamaño de fuente del section */
+    font-weight: bold;   /* Definir el grosr del texto del section */
+    color: rgb(25, 197, 34);   /* Definir el color del texto del section */
+    text-align: center;   /* Alinear el texto del section en el centro */
+    justify-content: center;   /* Alinear el texto del section en el centro */
 
 }
 
 #contenedor-productos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 16px;
-}
+    display: grid;   /* Crear un grid para el contenedor de productos */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));   /* Definir las columnas del grid */
+    gap: 16px;   /* Definir el espacio entre las filas y columnas */
+} 
 
 .card-producto {
-    background-color: rgb(117, 198, 106);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 300px;
-    margin: auto;
+    background-color: rgb(117, 198, 106);   /* Definir el color de fondo del card-producto */
+    border-radius: 0.5rem;   /* Definir el radio del card-producto */
+    padding: 1rem;   /* Definir el padding del card-producto */
+    display: flex;   /* Crear un flex para el card-producto */
+    flex-direction: column;   /* Definir la direccion del flex para el card-producto */
+    align-items: center;   /* Alinear los elementos del card-producto en el centro */
+    max-width: 300px;   /* Definir el ancho maximo del card-producto, sino le dabba max se me rompia todo*/
+    margin: auto;   /* Alinear el card-producto en el centro */
 }
 
 
-.card-producto img {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 0.5rem;
+.card-producto img { 
+    width: 100%;   /* Definir el ancho del img del card-producto */
+    aspect-ratio: 1/1;   /* Definir la proporcion del img del card-producto */
+    object-fit: cover;   /* Definir el ajuste del img del card-producto */
+    border-radius: 0.5rem;   /* Definir el radio del img del card-producto */
 }
 
 .card-producto h3 {
-    margin: 0;
-    font-size: 1.5rem;
+    margin: 0;   /* Eliminar el margen del h3 del card-producto */
+    font-size: 1.5rem;   /* Definir el tamaño de fuente del h3 del card-producto */
 }
 
 .card-producto p {
-    margin: 0;
-    font-size: 1.2rem;
+    margin: 0;   /* Eliminar el margen del p del card-producto */
+    font-size: 1.2rem;   /* Definir el tamaño de fuente del p del card-producto */
 }
 
 .card-producto button {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: rgb(0, 128, 0);
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
+    margin-top: 1rem;   /* Definir el margen superior del button del card-producto */
+    padding: 0.5rem 1rem;   /* Definir el padding del button del card-producto */
+    border: none;   /* Eliminar el borde del button del card-producto */
+    border-radius: 0.5rem;   /* Definir el radio del button del card-producto */
+    background-color: rgb(0, 128, 0);   /* Definir el color de fondo del button del card-producto */
+    color: white;   /* Definir el color del texto del button del card-producto */
+    font-size: 1rem;   /* Definir el tamaño de fuente del button del card-producto */
+    cursor: pointer;   /* Definir el cursor del button del card-producto */
 }
 
 .botonera {
-    display: flex;
-    text-align: center;
-    justify-content: center;
+    display: flex;   /* Crear un flex para el botonera */
+    text-align: center;   /* Alinear el texto del botonera en el centro */
+    justify-content: center;   /* Alinear el texto del botonera en el centro */
 }
 
 .boton-ordenar {
-    margin-right: 1rem;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: rgba(75, 199, 79, 0.625);
-    color: #000000;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
+    margin-right: 1rem;   /* Definir el margen derecho del boton-ordenar */
+    padding: 0.75rem 1.5rem;   /* Definir el padding del boton-ordenar */
+    border: none;   /* Eliminar el borde del boton-ordenar */
+    border-radius: 0.5rem;      /* Definir el radio del boton-ordenar */
+    background-color: rgba(75, 199, 79, 0.625);      /* Definir el color de fondo del boton-ordenar */
+    color: #000000;   /* Definir el color del texto del boton-ordenar */
+    font-size: 1rem;   /* Definir el tamaño de fuente del boton-ordenar */
+    font-weight: bold;   /* Definir el grosr del texto del boton-ordenar */
+    cursor: pointer;   /* Definir el cursor del boton-ordenar */
 }
-
+/*Aca fue que habia entrado mi error, y decidi que el carrito sea un hoover, en lugar de que este abajo*/
 .carrito {
-    position: relative;
-    background: none;
-    border: none;
-    padding: 0;
-    max-width: none;
+    position: relative;   /* La posicion del carrito es relativa por que se desplaza con el mouse */
+    background: none;   /* Eliminar el fondo del carrito */
+    border: none;   /* Eliminar el borde del carrito */
+    padding: 0;   /* Eliminar el padding del carrito */
+    max-width: none;   /* Eliminar el ancho maximo del carrito */
 }
 
 .carrito-contenido {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: #f8f9fa;
-    border: 2px solid #ddd;
-    border-radius: 12px;
-    padding: 16px;
-    width: 300px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: none;   /* Mostrar el contenido del carrito */
+    position: absolute;   /* Posicionar el contenido del carrito */
+    top: 100%;   /* Posicionar el contenido del carrito arriba */
+    right: 0;   /* Posicionar el contenido del carrito a la derecha */
+    background: #f8f9fa;   /* Definir el fondo del contenido del carrito */
+    border: 2px solid #ddd;   /* Definir el borde del contenido del carrito */
+    border-radius: 12px;   /* Definir el radio del contenido del carrito */
+    padding: 16px;   /* Definir el padding del contenido del carrito */
+    width: 300px;   /* Definir el ancho del contenido del carrito */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);   /* Definir el efecto de sombra del contenido del carrito */
+}
+/* Esto es para que el contenido del carrito se muestre cuando se pase el mouse por encima de el */
+.carrito:hover .carrito-contenido { 
+    display: block;   /* Mostrar el contenido del carrito en el hoover */
+    max-height: 400px;   /* Definir el alto maximo del contenido del carrito */
+    overflow-y: auto; /* esto es para que el contenido del carrito se pueda desplazar */
 }
 
-.carrito:hover .carrito-contenido {
-    display: block;
-    max-height: 400px;
-    overflow-y: auto;
-}
-
-#lista-carrito {
-    list-style: none;
-    padding: 0;
-    margin: 12px 0;
+#lista-carrito { 
+    list-style: none;   /* Eliminar el estilo de lista */
+    padding: 0;   /* Eliminar el padding de la lista */
+    margin: 12px 0;   /* Definir el margen de la lista */
 }
 
 .bloque-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;   /* Crear un flex para el bloque-item */
+    justify-content: space-between;   /* Distribuir los elementos del bloque-item entre si */
+    align-items: center;   /* Alinear los elementos del bloque-item en el centro */
+    background: white;   /* Definir el fondo del bloque-item */
+    border: 1px solid #eee;   /* Definir el borde del bloque-item */
+    border-radius: 8px;   /* Definir el radio del bloque-item */
+    padding: 10px;   /* Definir el padding del bloque-item */
+    margin-bottom: 8px;   /* Definir el margen inferior del bloque-item */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);   /* Definir el efecto de sombra del bloque-item */
 }
 
-.nombre-item {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #333;
+.nombre-item {  
+    margin: 0;   /* Eliminar el margen del nombre-item del bloque-item */
+    font-size: 1.2rem;   /* Definir el tamaño de fuente del nombre-item del bloque-item */
+    font-weight: 500;   /* Definir el grosr del texto del nombre-item del bloque-item */
+    color: #333;   /* Definir el color del texto del nombre-item del bloque-item */
 }
 
 /* Botón eliminar */
 .boton-eliminar {
-    background: #ff4d4d;
-    border: none;
-    color: white;
-    font-size: 13px;
-    padding: 6px 10px;
-    border-radius: 6px;
-    cursor: pointer;
-}
+    background: #ff4d4d;   /* Definir el color de fondo del boton-eliminar */
+    border: none;    /* Eliminar el borde del boton-eliminar */
+    color: white;   /* Definir el color del texto del boton-eliminar */
+    font-size: 13px;   /* Definir el tamaño de fuente del boton-eliminar */
+    padding: 6px 10px;   /* Definir el padding del boton-eliminar */
+    border-radius: 6px;   /* Definir el radio del boton-eliminar */
+    cursor: pointer;   /* Definir el cursor del boton-eliminar */
+} 
 
 
 /* Total del carrito */
 #total-carrito {
-    font-weight: bold;
-    margin-top: 12px;
-    text-align: right;
+    font-weight: bold;   /* Definir el grosr del texto del total-carrito */
+    margin-top: 12px;   /* Definir el margen superior del total-carrito */
+    text-align: right;   /* Alinear el texto del total-carrito a la derecha */
 }
 
 /* Botón vaciar */
 #btn-vaciar {
-    background: rgb(25, 197, 34);
-    border: none;
-    color: white;
-    font-size: 14px;
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 8px;
-    width: 100%;
-    transition: background 0.2s ease;
+    background: rgb(25, 197, 34);   /* Definir el color de fondo del boton-vaciar */
+    border: none;   /* Eliminar el borde del boton-vaciar */
+    color: white;   /* Definir el color del texto del boton-vaciar */
+    font-size: 14px;   /* Defi nir el tamaño de fuente del boton-vaciar */
+    padding: 8px 12px;   /* Definir el padding del boton-vaciar */
+    border-radius: 6px;   /* Definir el radio del boton-vaciar */
+    cursor: pointer;   /* Definir el cursor del boton-vaciar */
+    margin-top: 8px;   /* Definir el margen superior del boton-vaciar */
+    width: 100%;   /* Definir el ancho del boton-vaciar */
+    transition: background 0.2s ease;   /* Definir la transición del boton-vaciar */
 }
 
 .bloque-item {
-    display: flex;
-    align-items: center;
+    display: flex;   /* Crear un flex para el bloque-item */
+    align-items: center;   /* Alinear los elementos del bloque-item en el centro */
 }
 
 .nombre-item {
-    margin: 0;
-    font-size: 1.2rem;
+    margin: 0;   /* Eliminar el margen del nombre-item del bloque-item */
+    font-size: 1.2rem;   /* Definir el tamaño de fuente del nombre-item del bloque-item */
 }

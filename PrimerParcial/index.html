@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/main.js" defer></script>
 </head>
-
+<!-- Cabecera -->
 <body>
     <!-- Header --> 
     <header class="header">
@@ -16,15 +15,21 @@
             <div class="logo">Tienda de Frutas</div>
         </a>
 
-        <!-- Buscador -->
-        <input type="text" id="filtro" class="barra-busqueda" placeholder="Buscar fruta...">
+        <!-- Buscador --> 
+
+        <input type="text" id="filtro" class="barra-busqueda" placeholder="Buscar fruta..."> 
 
         <!-- Carrito -->
-        <div class="carrito">
-            <h2 id="contador-carrito">Carrito: 0 productos</h2>
+        <div class="carrito"> 
+            <!-- Contador del carrito -->
+            <h2 id="contador-carrito">Carrito: 0 productos</h2> 
+            <!-- Contenedor del carrito -->
             <div class="carrito-contenido">
+                <!-- Lista del carrito -->
                 <ul id="lista-carrito"></ul>
+                <!-- Total del carrito -->
                 <p id="total-carrito">Total: $0</p>
+                <!-- Boton de vaciar carrito -->
                 <button id="btn-vaciar">Vaciar carrito</button>
             </div>
         </div>
